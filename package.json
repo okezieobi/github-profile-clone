@@ -1,0 +1,23 @@
+{
+  "name": "gitub-profile-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "browser-sync -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okezieobi/gitub-profile-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/okezieobi/gitub-profile-clone/issues"
+  },
+  "homepage": "https://github.com/okezieobi/gitub-profile-clone#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}
