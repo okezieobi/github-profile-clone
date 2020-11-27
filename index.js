@@ -1,3 +1,4 @@
+window.addEventListener('load', () => {
 const input = document.querySelector('input');
 const ul = document.querySelectorAll('ul')[0];
 const li = document.querySelectorAll('li')[1];
@@ -13,3 +14,4 @@ input.addEventListener('focusout', () => {
     ul.classList.remove('input-grow');
     li.classList.remove('input-grow');
 });
+})
