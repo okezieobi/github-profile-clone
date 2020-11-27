@@ -17,6 +17,7 @@ ul {
     display: flex;
     justify-content: space-between;
     transition: 600ms;
+    padding: 0 1%;
 }
 
 .input-grow {
@@ -58,6 +59,16 @@ li:hover {
 
 @media (max-width: 576px) {
     .large-screen {
+        display: none;
+    }
+
+    ul {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .small-screen {
         display: none;
     }
 }

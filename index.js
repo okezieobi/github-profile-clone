@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
-const input = document.querySelector('input');
-const ul = document.querySelectorAll('ul')[0];
-const li = document.querySelectorAll('li')[1];
+const input = document.querySelector('[header-input]');
+const ul = document.querySelector('[header-input-list]');
+const li = document.querySelector('[header-input-item]');
 
 input.addEventListener('focus', () => {
     input.classList.add('input-grow')
