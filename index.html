@@ -10,21 +10,70 @@
   <body>
       <header>
         <nav class="small-screen">
-          <ul>
-            <li><i class="fas fa-bars"></i></li>
-            <li><i class="fab fa-github fa-2x"></i></li>
-            <li><i class="icons far fa-bell fa-2x"></i></li>
+          <ul list class="small-menu">
+            <li><i header-menu-icon class="fas fa-bars fa-2x"></i></li>
+            <li><i class="fab fa-github fa-3x"></i></li>
+            <li><i class="far fa-bell fa-2x"></i></li>
           </ul>
-          <ul class="dropdown">
-                <li>Input</li>
-                <li>Input</li>
-                <li>Input</li>
-                <li>Input</li>
-                <li>Input</li>
+          <ul drop-list>
+                <li>
+                  <div class="divider">
+                    <input type="text" class="small-input" name="search"placeholder="Search" />
+                  <hr class="soild" />
+                  </div>
+                </li>
+                <li>
+                  <div class="divider">
+                    <p>Dashboard</p>
+                    <hr class="solid" />
+                  </div>
+                </li>
+                <li>
+                  <div class="divider">
+                    <p>Pull Request</p>
+                    <hr class="solid" />
+                  </div>
+                </li>
+                <li>
+                  <div class="divider">
+                    <p>Issues</p>
+                    <hr class="solid" />
+                  </div>
+                </li>
+                <li>
+                  <div class="divider">
+                    <p>Marketplace</p>
+                    <hr class="solid" />
+                  </div>
+                </li>
+                <li>
+                  <div class="divider">
+                    <p>Explore</p>
+                    <hr class="solid" />
+                  </div>
+                </li>
+                <li>
+                  <div class="divider">
+                    <p>Settings</p>
+                    <hr class="solid" />
+                  </div>
+                </li>
+                <li>
+                  <div class="small-icon divider">
+                    <p><i class="fas fa-user fa-2x"></i></p>
+                    <hr class="solid" />
+                  </div>
+                </li>
+                <li>
+                  <div class="divider">
+                    <p>Sign out</p>
+                  <hr class="solid" />
+                  </div>
+                </li>
               </ul>
         </nav>
           <nav class="large-screen">
-          <ul header-input-list>
+          <ul list header-input-list>
               <li><i class="fab fa-github fa-3x"></i></li>
               <li header-input-item>
                 <input type="text" header-input name="search"placeholder="Search or jump to ..." />
@@ -35,7 +84,7 @@
               <li>Marketplace</li>
               <li>Explore</li>
           </ul>
-          <ul>
+          <ul list>
               <li><i class="icons far fa-bell"></i></li>
               <li><i class="icons fas fa-plus"></i></li>
               <li><i class="icons fas fa-user"></i></li>

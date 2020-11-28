@@ -44,7 +44,7 @@ input:focus {
     font-size: 120%;
 }
 
-li {
+[list] li {
     color: white;
     font-size: 80%;
     margin: 0 0.8vw;
@@ -53,18 +53,33 @@ li {
     transition: 600ms;
 }
 
-li:hover {
+[drop-list] li {
+    color: white;
+    font-size: 80%;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    transition: 600ms;
+}
+
+[list] li:hover {
     color: gray;
     cursor: pointer;
 }
 
 .small-menu {
-    margin: 0 3%;
+    padding: 0;
 }
 
-.dropdown {
+.divider {
+    width: 100%;
+}
+
+[drop-list] {
     display: flex;
     flex-flow: column;
+    height: 100%;
+    padding-bottom: 10px;
 }
 
 .hide-element {
@@ -75,11 +90,22 @@ li:hover {
     margin-right: 30px;
 }
 
+.small-input {
+    width: 96%;
+    margin-bottom: 5vh;
+}
+
+hr.solid {
+  border-top: 0.1vh solid #bbb;
+  width: 100%;
+}
+
 .small-screen {
     display: flex;
     flex-flow: column;
-    padding: 0 5px;
+    padding: 0 15px;
 }
+
 
 @media (max-width: 576px) {
     .large-screen {
