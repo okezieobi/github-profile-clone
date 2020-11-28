@@ -5,6 +5,7 @@ body {
 
 header {
     background-color: black;
+    overflow: hidden;
 }
 
 nav {
@@ -17,7 +18,7 @@ ul {
     display: flex;
     justify-content: space-between;
     transition: 600ms;
-    padding: 0 1%;
+    padding: 0;
 }
 
 .input-grow {
@@ -55,6 +56,29 @@ li {
 li:hover {
     color: gray;
     cursor: pointer;
+}
+
+.small-menu {
+    margin: 0 3%;
+}
+
+.dropdown {
+    display: flex;
+    flex-flow: column;
+}
+
+.hide-element {
+    display: none;
+}
+
+[header-input-list] {
+    margin-right: 30px;
+}
+
+.small-screen {
+    display: flex;
+    flex-flow: column;
+    padding: 0 5px;
 }
 
 @media (max-width: 576px) {
