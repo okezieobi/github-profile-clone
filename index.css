@@ -75,6 +75,15 @@ input:focus {
     width: 100%;
 }
 
+.divider p {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
 [drop-list] {
     display: flex;
     flex-flow: column;
@@ -96,8 +105,12 @@ input:focus {
 }
 
 hr.solid {
-  border-top: 0.1vh solid #bbb;
+  border-top: 0.1vh solid rgb(8, 8, 8);
   width: 100%;
+}
+
+.small-screen-user {
+    margin-left: 10px;
 }
 
 .small-screen {
