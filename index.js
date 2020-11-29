@@ -10,6 +10,7 @@ window.addEventListener('load', () => {
     const largeScreenRepoList = document.querySelector('[repo-large-screen]');
     const dropdownContentUser = document.querySelector('.dropdown-content-user');
     const dropdownContentRepo = document.querySelector('.dropdown-content-repo');
+    const largeSignedin = document.querySelector('[large-signed-in]');
     const body = document.querySelector('html')
 
     input.addEventListener('focus', () => {
@@ -52,7 +53,7 @@ window.addEventListener('load', () => {
     });
 
     const graphqlURL = 'https://api.github.com/graphql';
-    const personalToken = '277b651938755812ad86f1426c26dd3c5b7b9693';
+    const personalToken = '8a37f5e2fe30f05320e3825ba1ac168f69aa5789';
     const query = `
             {
                 viewer { 
@@ -73,6 +74,7 @@ window.addEventListener('load', () => {
         .then((data) => {
             smallScreenUser.innerHTML = data.data.viewer.login;
             avatars.forEach((element) => element.src = data.data.viewer.avatarUrl);
+            largeSignedin.innerHTML = `Signed in as ${data.data.viewer.login}`
         })
         .catch((err) => console.error(err));
 });
