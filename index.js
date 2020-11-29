@@ -6,6 +6,11 @@ window.addEventListener('load', () => {
     const headerMenu = document.querySelector('[header-menu-icon]');
     const smallScreenUser = document.querySelector('#user-small-screen');
     const avatars = document.querySelectorAll('img');
+    const largeScreenAvatar = document.querySelector('[user-avatar-large]');
+    const largeScreenRepoList = document.querySelector('[repo-large-screen]');
+    const dropdownContentUser = document.querySelector('.dropdown-content-user');
+    const dropdownContentRepo = document.querySelector('.dropdown-content-repo');
+    const body = document.querySelector('html')
 
     input.addEventListener('focus', () => {
         input.classList.add('input-grow')
@@ -24,8 +29,30 @@ window.addEventListener('load', () => {
         else mainDropdown.classList.add('hide-element');
     })
 
+    largeScreenAvatar.addEventListener('click', () => {
+        if (dropdownContentUser.classList.contains('hide-element')) {
+            dropdownContentUser.classList.remove('hide-element');
+            dropdownContentRepo.classList.add('hide-element')
+        } else dropdownContentUser.classList.add('hide-element')
+    });
+
+    largeScreenRepoList.addEventListener('click', () => {
+        if (dropdownContentRepo.classList.contains('hide-element')) {
+            dropdownContentRepo.classList.remove('hide-element');
+            dropdownContentUser.classList.add('hide-element')
+        } else dropdownContentRepo.classList.add('hide-element');
+    });
+
+    body.addEventListener('click', ({ target}) => {
+        if (!target.closest('[user-avatar-large]')) dropdownContentUser.classList.add('hide-element');
+    });
+
+     body.addEventListener('click', ({ target}) => {
+        if (!target.closest('[repo-large-screen]')) dropdownContentRepo.classList.add('hide-element');
+    });
+
     const graphqlURL = 'https://api.github.com/graphql';
-    const personalToken = 'ff410e332fd1fa99169f2e1c186f9c21aec75d74';
+    const personalToken = '277b651938755812ad86f1426c26dd3c5b7b9693';
     const query = `
             {
                 viewer { 

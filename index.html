@@ -84,19 +84,33 @@
               </li>
               <li>Pull Requests</li>
               <li>Issues</li>
-              <li>Codespaces</li>
               <li>Marketplace</li>
               <li>Explore</li>
           </ul>
           <ul list>
               <li><i class="icons far fa-bell"></i></li>
-              <li><i class="icons fas fa-plus"></i></li>
-              <li><img alt="avatar"/></li>
+              <li repo-large-screen><i class="icons fas fa-plus"></i> <i class="dropdown-arrow fas fa-caret-down"></i></li>
+              <li user-avatar-large><img alt="avatar"/><i class="dropdown-arrow fas fa-caret-down"></i></li>
           </ul>
       </nav>
     </header>
     <main>
-          <h1>Test</h1>
+          <div class="dropdown-container">
+            <div class="dropdown-repo">
+            <div class="dropdown-content-repo hide-element">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown-user">
+            <div class="dropdown-content-user hide-element">
+              <a href="#">Signed in as</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          </div>
       </main>
       <script src="./index.js" ></script>
   </body>
