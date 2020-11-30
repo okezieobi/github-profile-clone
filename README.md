@@ -1,3 +1,2 @@
-# gitub-profile-clone
-
-https://okezieobi.github.io/gitub-profile-clone/
+# github-profile-clone
+https://okezieobi.github.io/github-profile-clone/
