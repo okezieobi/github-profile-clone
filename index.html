@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/70dc8bebcd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>My GitHib Clone</title>
+  </head>
+  <body>
+      <header>
+        <nav class="small-screen">
+          <ul list class="small-menu">
+            <li><i header-menu-icon class="fas fa-bars fa-2x"></i></li>
+            <li><i class="fab fa-github fa-3x"></i></li>
+            <li><i class="far fa-bell fa-2x"></i></li>
+          </ul>
+          <ul drop-list>
+                <li>
+                  <div class="divider">
+                    <input type="text" class="small-input" name="search"placeholder="Search" />
+                  <hr class="soild" />
+                  </div>
+                </li>
+                <li>
+                  <div class="divider">
+                    <p>Dashboard</p>
+                    <hr class="solid" />
+                  </div>
+                </li>
+                <li>
+                  <div class="divider">
+                    <p>Pull Request</p>
+                    <hr class="solid" />
+                  </div>
+                </li>
+                <li>
+                  <div class="divider">
+                    <p>Issues</p>
+                    <hr class="solid" />
+                  </div>
+                </li>
+                <li>
+                  <div class="divider">
+                    <p>Marketplace</p>
+                    <hr class="solid" />
+                  </div>
+                </li>
+                <li>
+                  <div class="divider">
+                    <p>Explore</p>
+                    <hr class="solid" />
+                  </div>
+                </li>
+                <li>
+                  <div class="divider">
+                    <p>Settings</p>
+                    <hr class="solid" />
+                  </div>
+                </li>
+                <li>
+                  <div class="small-icon divider">
+                    <p>
+                      <img user-avatar-small alt="avatar" />
+                    </i><span class="small-screen-user" id="user-small-screen"></span>
+                  </p>
+                    <hr class="solid" />
+                  </div>
+                </li>
+                <li>
+                  <div class="divider">
+                    <p><i class="fas fa-sign-out-alt fa-2x"></i>&nbsp Sign out</p>
+                  <hr class="solid" />
+                  </div>
+                </li>
+              </ul>
+        </nav>
+          <nav class="large-screen">
+          <ul list header-input-list>
+              <li><i class="fab fa-github fa-3x"></i></li>
+              <li header-input-item>
+                <input type="text" header-input name="search"placeholder="Search or jump to ..." />
+              </li>
+              <li>Pull Requests</li>
+              <li>Issues</li>
+              <li>Marketplace</li>
+              <li>Explore</li>
+          </ul>
+          <ul list>
+              <li><i class="icons far fa-bell"></i></li>
+              <li repo-large-screen><i class="icons fas fa-plus"></i> <i class="dropdown-arrow fas fa-caret-down"></i></li>
+              <li user-avatar-large><img alt="avatar"/><i class="dropdown-arrow fas fa-caret-down"></i></li>
+          </ul>
+      </nav>
+    </header>
+    <main>
+          <div class="dropdown-container">
+            <div class="dropdown-repo">
+            <div class="dropdown-content-repo hide-element">
+              <a href="#">New repository</a>
+              <a href="#">Import repository</a>
+              <a href="#">New gist</a>
+              <a href="#">New organization</a>
+              <a href="#">New project</a>
+            </div>
+          </div>
+          <div class="dropdown-user">
+            <div class="dropdown-content-user hide-element">
+              <span large-signed-in>Signed in as</span>
+              <span>Working from</span>
+              <a href="#">Your profile</a>
+              <a href="#">Your repositories</a>
+              <a href="#">Your organizations</a>
+              <a href="#">Your projects</a>
+              <a href="#">Your stars</a>
+              <a href="#">Your gists</a>
+              <a href="#">Feature preview</a>
+              <a href="#">Help</a>
+              <a href="#">Settings</a>
+              <a href="#">Sign out</a>
+            </div>
+          </div>
+          </div>
+          <section class="main-container">
+            <section class="main-repo-container">
+              <section>
+                <ul class="main-list">
+              <li>
+                <p>Overview</p>
+                <hr class="solid-large-list-nofocus" />
+              </li>
+              <li>
+                <p class="main-list-focus">Repositories</p>
+                <hr class="solid-large-list" />
+              </li>
+              <li>
+                <p>Projects</p>
+                <hr class="solid-large-list-nofocus" />
+              </li>
+              <li>
+                <p>Packages</p>
+                <hr class="solid-large-list-nofocus" />
+              </li>
+            </ul>
+             <hr class="solid-large" />
+              </section>
+              <section class="repo-list">
+                <input class="repo-input" name="search"placeholder="Find a repository ..." />
+                <div></div>
+              </section>
+            </section>
+            <section class="main-container-profile">
+              <img alt="avatar"/>
+              <p>Name</p>
+              <p>Description</p>
+            </section>
+          </section>
+      </main>
+      <script src="./index.js" ></script>
+  </body>
+</html>

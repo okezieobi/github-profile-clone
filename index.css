@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: black;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    transition: 600ms;
+    padding: 0;
+}
+
+[large-dropdown] {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    transition: 600ms;
+    flex-flow: column;
+    padding: 0;
+}
+
+.input-grow {
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+input {
+    padding: 0.5em;
+    border-radius: 5px;
+    background-color: rgb(5, 0, 0);
+    color: white;
+    transition: 600ms;
+    width: 15vw;
+    border: 1px solid grey;
+}
+
+.repo-input {
+    padding: 0.5em;
+    border-radius: 5px;
+    width: 70%;
+    background-color: white;
+    color: black;
+    border: 1px solid grey;
+}
+
+input:focus {
+    background-color: white;
+}
+
+.icons {
+    font-size: 15px;
+}
+
+[list] li {
+    color: white;
+    font-size: 80%;
+    margin: 0 0.8vw;
+    display: flex;
+    align-items: center;
+    transition: 600ms;
+}
+
+[drop-list] li {
+    color: white;
+    font-size: 80%;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    transition: 600ms;
+}
+
+[list] li:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.small-menu {
+    padding: 0;
+}
+
+.divider {
+    width: 100%;
+}
+
+.divider p {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
+[drop-list] {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.hide-element {
+    display: none;
+}
+
+[header-input-list] {
+    margin-right: 40px;
+}
+
+.small-input {
+    width: 96%;
+    margin-bottom: 5vh;
+}
+
+hr.solid {
+  border-top: 0.1vh solid rgb(8, 8, 8);
+  width: 100%;
+}
+
+.small-screen-user {
+    margin-left: 10px;
+}
+
+.small-screen {
+    display: flex;
+    flex-flow: column;
+    padding: 0 15px;
+}
+
+.dropdown-arrow {
+    margin-left: 7px;
+}
+
+
+@media (max-width: 576px) {
+    .large-screen {
+        display: none;
+    }
+
+    .main-container {
+        flex-flow: column-reverse;
+    }
+
+    ul {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .small-screen {
+        display: none;
+    }
+}
+
+main {
+    margin: 0;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown-user {
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  right: 0;
+  top: -10px;
+}
+
+.dropdown-repo {
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  right: 45px;
+  top: -10px;
+}
+
+.dropdown-content-user, .dropdown-content-repo {
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+
+.dropdown-content-user a, .dropdown-content-user span, .dropdown-content-repo a {
+  color: black;
+  padding: 6px 13px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-content-user a:hover, .dropdown-content-repo a:hover {
+    background-color: rgb(26, 101, 158);
+    color: white;
+}
+
+.dropdown-content-user span:hover {
+    background-color: ghostwhite;
+    cursor: pointer;
+}
+
+
+
+.dropdown-container {
+    position: relative;
+    margin: 0 10px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+}
+
+.main-container-profile {
+     display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    height: 100%;
+    position: relative;
+    top: -10vh;
+}
+
+[user-avatar-large] img, [user-avatar-small] {
+    height: 25px;
+}
+
+.main-list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.main-list li {
+    margin: 0 1vw;
+    font-weight: 200;
+}
+
+hr.solid-large {
+  border-top: 0.1vh solid rgb(224, 224, 224);
+  width: 100%;
+  margin: 0;
+}
+
+hr.solid-large-list {
+  border-top: 0.1vh solid rgb(245, 44, 8);
+  margin: 0;
+  width: 100%;
+}
+
+
+hr.solid-large-list-nofocus {
+  margin: 0;
+  visibility: hidden;
+}
+
+.main-list-focus {
+    font-weight: bold;
+}
+
+.repo-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-repo-container {
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    flex-flow: column;
+}
