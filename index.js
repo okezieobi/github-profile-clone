@@ -58,7 +58,7 @@ window.addEventListener('load', () => {
             {
                 viewer { 
                     login
-                   avatarUrl(size: 20) 
+                   avatarUrl(size: 300) 
                     }
             }
             `;

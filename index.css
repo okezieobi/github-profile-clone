@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
 }
 
 header {
@@ -210,4 +210,53 @@ main {
 .dropdown-container {
     position: relative;
     margin: 0 10px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container-profile {
+     display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    height: 100%;
+}
+
+[user-avatar-large] img, [user-avatar-small] {
+    height: 25px;
+}
+
+.main-list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.main-list li {
+    margin: 0 1vw;
+    font-weight: 200;
+}
+
+hr.solid-large {
+  border-top: 0.1vh solid rgb(224, 224, 224);
+  width: 100%;
+  margin: 0;
+}
+
+hr.solid-large-list {
+  border-top: 0.1vh solid rgb(245, 44, 8);
+  margin: 0;
+  width: 100%;
+}
+
+
+hr.solid-large-list-nofocus {
+  margin: 0;
+  visibility: hidden;
+}
+
+.main-list-focus {
+    font-weight: bold;
 }
